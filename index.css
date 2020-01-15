@@ -32,6 +32,7 @@ body{
     overflow: hidden;
 
     display: grid;
+    grid-template-rows: 15rem auto;
 }
 
 /* IMG */
@@ -49,7 +50,7 @@ body{
 }
 
 .cardTxt{
-    padding-top: 3rem;
+    padding-top: 1.6rem;
     font-size: 1.6rem;
     line-height: 2.2rem;
     font-weight: 400;
@@ -57,6 +58,7 @@ body{
 }
 
 .cardValueWrapper{
+    align-self: end;
 }
 
 .cardValue{
@@ -68,7 +70,6 @@ body{
 
     display: inline-block;
 
-    align-self: end;
 
     max-width: 8rem;
 
