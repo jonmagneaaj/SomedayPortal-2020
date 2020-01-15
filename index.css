@@ -1,0 +1,99 @@
+:root{
+    font-size: 62.5%;
+    --red:  rgb(227, 66, 102);
+    --blue: rgb(68, 106, 241);
+    font-family: "roboto";
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: lightblue;
+    padding: 3rem;
+
+}
+
+/* Wrapper for cards / grid */
+.cardWrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 30rem));
+    gap: 2rem;
+}
+
+/* The individual cards */
+.card{
+    background-color: white;
+    border-radius: 6px;
+    max-width: 30rem;
+    overflow: hidden;
+
+    display: grid;
+}
+
+/* IMG */
+.cardImg{
+
+    width: 100%;
+
+    max-height: 15rem;
+
+    object-fit: cover;
+
+    
+}
+
+/* Text */
+.cardTxtWrapper{
+    padding: 0 1.6rem 1.2rem;
+
+    display: grid;
+}
+
+.cardTxt{
+    padding-top: 3rem;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    font-weight: 400;
+}
+
+.cardValueWrapper{
+    display: grid;
+    grid-auto-flow: column;
+
+
+}
+
+.cardValue{
+    margin-top: 2rem;
+    font-size: 1rem;
+
+    padding: 0.4rem 0.6rem;
+    border-radius: 99rem;
+
+    display: inline-block;
+
+    align-self: end;
+
+    max-width: 8rem;
+
+    text-align: center;
+}
+
+
+/* colour classes for info boxes*/
+.blueInfo{
+    border: 2px solid var(--blue);
+    background-color:  rgba(68, 106, 241,0.1) ;
+    color: var(--blue);
+}
+
+.redInfo{
+    border: 2px solid var(--red);
+    background-color:  rgba(227, 66, 102,0.1) ;
+    color: var(--red);
+}
+
